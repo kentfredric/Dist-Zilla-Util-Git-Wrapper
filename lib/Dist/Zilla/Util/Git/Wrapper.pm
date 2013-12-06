@@ -9,7 +9,7 @@ BEGIN {
   $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001000';
 }
 
-# ABSTRACT: Vivify a Git instance from Dzil
+# ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
 
 use Moose;
@@ -18,10 +18,12 @@ use Git::Wrapper;
 
 our $AUTOLOAD;
 
+## no critic (ProhibitAutoloading)
+
 sub AUTOLOAD {
     my ($self, @args ) = @_;
     my $meth = $AUTOLOAD;
-    $meth =~ s/.+:://;
+    $meth =~ s/.+:://msx;
     return if $meth eq 'DESTROY';
     return $self->git->$meth( @args );
 }
@@ -49,7 +51,7 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Util::Git::Wrapper - Vivify a Git instance from Dzil
+Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
@@ -71,7 +73,7 @@ This is a simple straight forward way of doing what you want with the least ment
 
 Everything else is just proxy methods for C<< git >>
 
-This is a more IOC approach to my swathes of C<< Dist::Zilla::Role::Git::LocalRepository >> stuff,
+This is a more I.O.C approach to my swathes of C<< Dist::Zilla::Role::Git::LocalRepository >> stuff,
 which got so complex with dependency management my head exploded.
 
 =head1 AUTHOR

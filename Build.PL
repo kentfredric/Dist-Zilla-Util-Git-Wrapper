@@ -12,7 +12,7 @@ my %module_build_args = (
   "configure_requires" => {
     "Module::Build" => "0.4203"
   },
-  "dist_abstract" => "Vivify a Git instance from Dzil",
+  "dist_abstract" => "Vivify a Git::Wrapper instance for Dist::Zilla",
   "dist_author" => [
     "Kent Fredric <kentfredric\@gmail.com>"
   ],

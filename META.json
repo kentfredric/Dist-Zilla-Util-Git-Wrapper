@@ -1,5 +1,5 @@
 {
-   "abstract" : "Vivify a Git instance from Dzil",
+   "abstract" : "Vivify a Git::Wrapper instance for Dist::Zilla",
    "author" : [
       "Kent Fredric <kentfredric@gmail.com>"
    ],
