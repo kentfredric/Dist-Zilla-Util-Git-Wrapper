@@ -26,6 +26,17 @@ SYNOPSIS
     "Dist::Zilla::Role::Git::LocalRepository" stuff, which got so complex
     with dependency management my head exploded.
 
+ATTRIBUTES
+  "zilla"
+    Parameter lazily required, and should be a Dist::Zilla object ( or
+    compatible )
+
+  "git"
+    A Git::Wrapper instance. Optional, and pointless to specify manually,
+    but could be useful for testing where you don't want Dist::Zilla
+
+    Vivified if not specified based on the "zilla" parameter.
+
 AUTHOR
     Kent Fredric <kentfredric@gmail.com>
 

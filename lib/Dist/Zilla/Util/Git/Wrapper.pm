@@ -28,6 +28,7 @@ sub AUTOLOAD {
     return $self->git->$meth( @args );
 }
 
+
 has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
@@ -35,8 +36,6 @@ sub _build_git {
     my ( $self, @args ) = @_;
     return Git::Wrapper->new(  $self->zilla->root );
 }
-
-
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
@@ -75,6 +74,19 @@ Everything else is just proxy methods for C<< git >>
 
 This is a more I.O.C approach to my swathes of C<< Dist::Zilla::Role::Git::LocalRepository >> stuff,
 which got so complex with dependency management my head exploded.
+
+=head1 ATTRIBUTES
+
+=head2 C<zilla>
+
+Parameter lazily required, and should be a Dist::Zilla object ( or compatible )
+
+=head2 C<git>
+
+A Git::Wrapper instance. Optional, and pointless to specify manually,
+but could be useful for testing where you don't want Dist::Zilla
+
+Vivified if not specified based on the C<zilla> parameter.
 
 =head1 AUTHOR
 
