@@ -42,6 +42,19 @@ sub AUTOLOAD {
     return $self->git->$meth( @args );
 }
 
+=attr C<zilla>
+
+Parameter lazily required, and should be a Dist::Zilla object ( or compatible )
+
+=attr C<git>
+
+A Git::Wrapper instance. Optional, and pointless to specify manually,
+but could be useful for testing where you don't want Dist::Zilla
+
+Vivified if not specified based on the C<zilla> parameter.
+
+=cut
+
 has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
@@ -49,8 +62,6 @@ sub _build_git {
     my ( $self, @args ) = @_;
     return Git::Wrapper->new(  $self->zilla->root );
 }
-
-
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
