@@ -6,7 +6,7 @@ BEGIN {
   $Dist::Zilla::Util::Git::Wrapper::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001000';
+  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001001';
 }
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
@@ -54,7 +54,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 
