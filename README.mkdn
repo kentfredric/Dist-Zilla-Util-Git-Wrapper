@@ -1,6 +1,6 @@
 # NAME
 
-Dist::Zilla::Util::Git::Wrapper - Vivify a Git instance from Dzil
+Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 # VERSION
 
@@ -22,7 +22,7 @@ This is a simple straight forward way of doing what you want with the least ment
 
 Everything else is just proxy methods for `git`
 
-This is a more IOC approach to my swathes of `Dist::Zilla::Role::Git::LocalRepository` stuff,
+This is a more I.O.C approach to my swathes of `Dist::Zilla::Role::Git::LocalRepository` stuff,
 which got so complex with dependency management my head exploded.
 
 # AUTHOR
