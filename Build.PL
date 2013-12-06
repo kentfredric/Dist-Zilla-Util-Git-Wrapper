@@ -32,6 +32,8 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
+    "Path::Tiny" => 0,
+    "Test::Fatal" => 0,
     "Test::More" => "1.001002"
   }
 );
@@ -39,6 +41,8 @@ my %module_build_args = (
 
 my %fallback_build_requires = (
   "Module::Build" => "0.4203",
+  "Path::Tiny" => 0,
+  "Test::Fatal" => 0,
   "Test::More" => "1.001002"
 );
 

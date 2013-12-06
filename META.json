@@ -92,6 +92,8 @@
       },
       "test" : {
          "requires" : {
+            "Path::Tiny" : "0",
+            "Test::Fatal" : "0",
             "Test::More" : "1.001002"
          }
       }
@@ -103,6 +105,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper/issues"
+      },
+      "homepage" : "https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper.git",
+         "web" : "https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper"
+      }
+   },
    "version" : "0.001000",
    "x_BuiltWith" : {
       "modules" : {
@@ -153,9 +166,11 @@
          "Module::Build" : "0.4203",
          "Moose" : "2.1107",
          "MooseX::LazyRequire" : "0.10",
+         "Path::Tiny" : "0.047",
          "Pod::Coverage::TrustPod" : "0.100003",
          "Test::CPAN::Changes" : "0.26",
          "Test::CPAN::Meta" : "0.23",
+         "Test::Fatal" : "0.013",
          "Test::Kwalitee" : "1.17",
          "Test::More" : "1.001002",
          "Test::Pod" : "1.48",
