@@ -3,7 +3,7 @@ NAME
     Dist::Zilla
 
 VERSION
-    version 0.001000
+    version 0.001001
 
 SYNOPSIS
         use Dist::Zilla::Util::Git::Wrapper;
