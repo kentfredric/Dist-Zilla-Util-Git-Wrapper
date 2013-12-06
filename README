@@ -1,0 +1,49 @@
+NAME
+    Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for
+    Dist::Zilla
+
+VERSION
+    version 0.001000
+
+SYNOPSIS
+        use Dist::Zilla::Util::Git::Wrapper;
+
+        my $wrapper =  Dist::Zilla::Util::Git::Wrapper->new( zilla => $self->zilla );
+
+        $wrapper->log(); # etc.
+
+    Yes, this does very little, but simply serves as an abstraction for
+    getting a Git::Wrapper object from git, mostly, because everyone
+    remembers "$self->zilla", but you have to RTFM and go source diving to
+    know about "$self->zilla->root"
+
+    This is a simple straight forward way of doing what you want with the
+    least mental overhead.
+
+    Everything else is just proxy methods for "git"
+
+    This is a more I.O.C approach to my swathes of
+    "Dist::Zilla::Role::Git::LocalRepository" stuff, which got so complex
+    with dependency management my head exploded.
+
+ATTRIBUTES
+  "zilla"
+    Parameter lazily required, and should be a Dist::Zilla object ( or
+    compatible )
+
+  "git"
+    A Git::Wrapper instance. Optional, and pointless to specify manually,
+    but could be useful for testing where you don't want Dist::Zilla
+
+    Vivified if not specified based on the "zilla" parameter.
+
+AUTHOR
+    Kent Fredric <kentfredric@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2013 by Kent Fredric
+    <kentfredric@gmail.com>.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+
