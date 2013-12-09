@@ -1,5 +1,9 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
+0.001002 2013-12-09T04:09:39Z
+ - Report Git Versions
+ - Make basic test more resilient
+
 0.001001 2013-12-06T21:46:53Z
  - Make tests more resilient to env indifference.
 

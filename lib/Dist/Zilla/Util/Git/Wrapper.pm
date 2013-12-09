@@ -6,7 +6,7 @@ BEGIN {
   $Dist::Zilla::Util::Git::Wrapper::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001001';
+  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001002';
 }
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
@@ -21,11 +21,11 @@ our $AUTOLOAD;
 ## no critic (ProhibitAutoloading)
 
 sub AUTOLOAD {
-    my ($self, @args ) = @_;
-    my $meth = $AUTOLOAD;
-    $meth =~ s/.+:://msx;
-    return if $meth eq 'DESTROY';
-    return $self->git->$meth( @args );
+  my ( $self, @args ) = @_;
+  my $meth = $AUTOLOAD;
+  $meth =~ s/.+:://msx;
+  return if $meth eq 'DESTROY';
+  return $self->git->$meth(@args);
 }
 
 
@@ -33,8 +33,8 @@ has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
 sub _build_git {
-    my ( $self, @args ) = @_;
-    return Git::Wrapper->new(  $self->zilla->root );
+  my ( $self, @args ) = @_;
+  return Git::Wrapper->new( $self->zilla->root );
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -54,7 +54,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
-version 0.001001
+version 0.001002
 
 =head1 SYNOPSIS
 

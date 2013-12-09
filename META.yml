@@ -19,7 +19,7 @@ name: Dist-Zilla-Util-Git-Wrapper
 provides:
   Dist::Zilla::Util::Git::Wrapper:
     file: lib/Dist/Zilla/Util/Git/Wrapper.pm
-    version: 0.001001
+    version: 0.001002
 requires:
   Git::Wrapper: 0
   Moose: 0
@@ -31,7 +31,7 @@ resources:
   bugtracker: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper/issues
   homepage: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper
   repository: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper.git
-version: 0.001001
+version: 0.001002
 x_BuiltWith:
   modules:
     Dist::Zilla::Plugin::Authority: 1.006
