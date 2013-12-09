@@ -35,11 +35,11 @@ our $AUTOLOAD;
 ## no critic (ProhibitAutoloading)
 
 sub AUTOLOAD {
-    my ($self, @args ) = @_;
-    my $meth = $AUTOLOAD;
-    $meth =~ s/.+:://msx;
-    return if $meth eq 'DESTROY';
-    return $self->git->$meth( @args );
+  my ( $self, @args ) = @_;
+  my $meth = $AUTOLOAD;
+  $meth =~ s/.+:://msx;
+  return if $meth eq 'DESTROY';
+  return $self->git->$meth(@args);
 }
 
 =attr C<zilla>
@@ -59,8 +59,8 @@ has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
 sub _build_git {
-    my ( $self, @args ) = @_;
-    return Git::Wrapper->new(  $self->zilla->root );
+  my ( $self, @args ) = @_;
+  return Git::Wrapper->new( $self->zilla->root );
 }
 
 __PACKAGE__->meta->make_immutable;
