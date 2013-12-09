@@ -34,11 +34,14 @@ sub report_ctx {
   note explain \@lines;
 }
 
-report_ctx( $wrapper->init() );
-report_ctx( $file->touch );
-report_ctx( $wrapper->add('testfile') );
-report_ctx( $wrapper->commit( '-m', 'Test Commit' ) );
-pass('Git::Wrapper methods executed without failure');
+my $mex = exception {
+  report_ctx( $wrapper->init() );
+  report_ctx( $file->touch );
+  report_ctx( $wrapper->add('testfile') );
+  report_ctx( $wrapper->commit( '-m', 'Test Commit' ) );
+};
+
+is( $mex, undef, 'Git::Wrapper methods executed without failure' ) or diag $mex;
 
 my $ex = exception {
   $wrapper->method_that_does_not_exist;
