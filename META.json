@@ -101,7 +101,7 @@
    "provides" : {
       "Dist::Zilla::Util::Git::Wrapper" : {
          "file" : "lib/Dist/Zilla/Util/Git/Wrapper.pm",
-         "version" : "0.001001"
+         "version" : "0.001002"
       }
    },
    "release_status" : "stable",
@@ -116,7 +116,7 @@
          "web" : "https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper"
       }
    },
-   "version" : "0.001001",
+   "version" : "0.001002",
    "x_BuiltWith" : {
       "modules" : {
          "Dist::Zilla::Plugin::Authority" : "1.006",
