@@ -1,6 +1,8 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+
+0.001002 2013-12-09T04:09:39Z
  - Report Git Versions
  - Make basic test more resilient
 
