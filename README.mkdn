@@ -4,7 +4,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 # VERSION
 
-version 0.001001
+version 0.001002
 
 # SYNOPSIS
 
