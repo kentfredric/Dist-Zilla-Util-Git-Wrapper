@@ -29,7 +29,6 @@ sub AUTOLOAD {
 }
 
 
-has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
 sub _build_git {
