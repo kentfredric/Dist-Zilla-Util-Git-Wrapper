@@ -27,7 +27,7 @@ which got so complex with dependency management my head exploded.
 =cut
 
 use Moose;
-use MooseX::LazyRequire;
+with 'Dist::Zilla::UtilRole::MaybeZilla';
 use Git::Wrapper;
 
 our $AUTOLOAD;
@@ -55,7 +55,6 @@ Vivified if not specified based on the C<zilla> parameter.
 
 =cut
 
-has zilla => ( isa => 'Object', is => 'ro', lazy_required => 1 );
 has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
 
 sub _build_git {
