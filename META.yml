@@ -5,6 +5,7 @@ author:
 build_requires:
   Module::Build: 0.4203
   Path::Tiny: 0
+  Sort::Versions: 0
   Test::Fatal: 0
   Test::More: 1.001002
 configure_requires:
@@ -19,11 +20,11 @@ name: Dist-Zilla-Util-Git-Wrapper
 provides:
   Dist::Zilla::Util::Git::Wrapper:
     file: lib/Dist/Zilla/Util/Git/Wrapper.pm
-    version: 0.001002
+    version: 0.002000
 requires:
+  Dist::Zilla::UtilRole::MaybeZilla: 0
   Git::Wrapper: 0
   Moose: 0
-  MooseX::LazyRequire: 0
   perl: 5.006
   strict: 0
   warnings: 0
@@ -31,7 +32,7 @@ resources:
   bugtracker: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper/issues
   homepage: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper
   repository: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper.git
-version: 0.001002
+version: 0.002000
 x_BuiltWith:
   modules:
     Dist::Zilla::Plugin::Authority: 1.006
@@ -77,13 +78,14 @@ x_BuiltWith:
     Dist::Zilla::Plugin::UploadToCPAN: 5.006
     Dist::Zilla::PluginBundle::Author::KENTNL: 2.007000
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
+    Dist::Zilla::UtilRole::MaybeZilla: 0.001000
     Git::Wrapper: 0.030
     Module::Build: 0.4203
     Moose: 2.1107
-    MooseX::LazyRequire: 0.10
-    Path::Tiny: 0.047
+    Path::Tiny: 0.049
     Pod::Coverage::TrustPod: 0.100003
-    Test::CPAN::Changes: 0.26
+    Sort::Versions: 1.5
+    Test::CPAN::Changes: 0.27
     Test::CPAN::Meta: 0.23
     Test::Fatal: 0.013
     Test::Kwalitee: 1.17

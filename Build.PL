@@ -17,15 +17,15 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Dist-Zilla-Util-Git-Wrapper",
-  "dist_version" => "0.001002",
+  "dist_version" => "0.002000",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Util::Git::Wrapper",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {
+    "Dist::Zilla::UtilRole::MaybeZilla" => 0,
     "Git::Wrapper" => 0,
     "Moose" => 0,
-    "MooseX::LazyRequire" => 0,
     "perl" => "5.006",
     "strict" => 0,
     "warnings" => 0
@@ -33,6 +33,7 @@ my %module_build_args = (
   "script_files" => [],
   "test_requires" => {
     "Path::Tiny" => 0,
+    "Sort::Versions" => 0,
     "Test::Fatal" => 0,
     "Test::More" => "1.001002"
   }
@@ -42,6 +43,7 @@ my %module_build_args = (
 my %fallback_build_requires = (
   "Module::Build" => "0.4203",
   "Path::Tiny" => 0,
+  "Sort::Versions" => 0,
   "Test::Fatal" => 0,
   "Test::More" => "1.001002"
 );

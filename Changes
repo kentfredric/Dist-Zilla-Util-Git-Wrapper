@@ -1,5 +1,19 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
+0.002000 2013-12-14T13:15:29Z
+ - Make tests pass on Git 1.4
+ - Reimplement some parts in terms of UtilRole::MaybeZilla
+
+ [Depedencies::Noteworthy]
+ - Drop MooseX::LazyRequire for UtilRole::MaybeZilla
+ - add Sort::Versions for Git 1.4 tests
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001002, see Changes.deps{,.all,.dev} for
+   details
+ - runtime: +1 -1
+ - test: +1
+
 0.001002 2013-12-09T04:09:39Z
  - Report Git Versions
  - Make basic test more resilient
