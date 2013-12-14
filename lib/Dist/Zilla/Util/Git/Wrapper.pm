@@ -6,14 +6,14 @@ BEGIN {
   $Dist::Zilla::Util::Git::Wrapper::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001002';
+  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.001003';
 }
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
 
 use Moose;
-use MooseX::LazyRequire;
+with 'Dist::Zilla::UtilRole::MaybeZilla';
 use Git::Wrapper;
 
 our $AUTOLOAD;
@@ -54,7 +54,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
-version 0.001002
+version 0.001003
 
 =head1 SYNOPSIS
 
