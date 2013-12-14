@@ -6,6 +6,8 @@ Release history for Dist-Zilla-Util-Git-Wrapper
 
  [Depedencies::Noteworthy]
  - Drop MooseX::LazyRequire for UtilRole::MaybeZilla
+ - add Sort::Versions for Git 1.4 tests
+
 
 0.001002 2013-12-09T04:09:39Z
  - Report Git Versions
