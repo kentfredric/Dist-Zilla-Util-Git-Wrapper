@@ -1,6 +1,8 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+
+0.002000 2013-12-14T13:15:29Z
  - Make tests pass on Git 1.4
  - Reimplement some parts in terms of UtilRole::MaybeZilla
 
