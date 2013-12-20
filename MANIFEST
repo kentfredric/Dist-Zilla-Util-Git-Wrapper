@@ -13,6 +13,7 @@ META.yml
 README
 dist.ini
 lib/Dist/Zilla/Util/Git/Wrapper.pm
+lib/Dist/Zilla/UtilRole/MaybeGit.pm
 maint-travis-ci/README.mkdn
 maint-travis-ci/before_script.pl
 maint-travis-ci/branch_reset.pl
@@ -28,10 +29,12 @@ maint-travis-ci/yamls/sterile.mkdn
 maint-travis-ci/yamls/sterile.yaml
 maint-travis-ci/yamls/sterile2.yaml
 perlcritic.rc
+t/00-compile/lib_Dist_Zilla_UtilRole_MaybeGit_pm.t
 t/00-compile/lib_Dist_Zilla_Util_Git_Wrapper_pm.t
 t/00-report-git-version.t
 t/000-report-versions-tiny.t
 t/basic.t
+t/utilrole.t
 weaver.ini
 xt/author/critic.t
 xt/release/cpan-changes.t
