@@ -17,7 +17,7 @@ my %module_build_args = (
     "Kent Fredric <kentfredric\@gmail.com>"
   ],
   "dist_name" => "Dist-Zilla-Util-Git-Wrapper",
-  "dist_version" => "0.002000",
+  "dist_version" => "0.003000",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Util::Git::Wrapper",
   "recommends" => {},
@@ -26,12 +26,16 @@ my %module_build_args = (
     "Dist::Zilla::UtilRole::MaybeZilla" => 0,
     "Git::Wrapper" => 0,
     "Moose" => 0,
-    "perl" => "5.006",
+    "Moose::Role" => 0,
+    "perl" => "5.008",
     "strict" => 0,
+    "utf8" => 0,
     "warnings" => 0
   },
   "script_files" => [],
   "test_requires" => {
+    "Log::Contextual::LogDispatchouli" => 0,
+    "Log::Dispatchouli" => 0,
     "Path::Tiny" => 0,
     "Sort::Versions" => 0,
     "Test::Fatal" => 0,
@@ -41,6 +45,8 @@ my %module_build_args = (
 
 
 my %fallback_build_requires = (
+  "Log::Contextual::LogDispatchouli" => 0,
+  "Log::Dispatchouli" => 0,
   "Module::Build" => "0.4203",
   "Path::Tiny" => 0,
   "Sort::Versions" => 0,

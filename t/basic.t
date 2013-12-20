@@ -32,11 +32,10 @@ my $wrapper = Dist::Zilla::Util::Git::Wrapper->new( git => Git::Wrapper->new( $t
 
 our ($IS_ONE_FIVE_PLUS);
 
-
-if( versioncmp( $wrapper->version, '1.5' ) > 0  ) {
- note "> 1.5";
- $IS_ONE_FIVE_PLUS = 1;
-};
+if ( versioncmp( $wrapper->version, '1.5' ) > 0 ) {
+  note "> 1.5";
+  $IS_ONE_FIVE_PLUS = 1;
+}
 
 sub report_ctx {
   my (@lines) = @_;
@@ -44,10 +43,11 @@ sub report_ctx {
 }
 
 my $mex = exception {
-  if ( $IS_ONE_FIVE_PLUS ) {
-      report_ctx( $wrapper->init() );
-  } else {
-      report_ctx( $wrapper->init_db() );
+  if ($IS_ONE_FIVE_PLUS) {
+    report_ctx( $wrapper->init() );
+  }
+  else {
+    report_ctx( $wrapper->init_db() );
   }
   report_ctx( $file->touch );
   report_ctx( $wrapper->add('testfile') );
@@ -62,9 +62,10 @@ my $ex = exception {
 isnt( $ex, undef, 'method_that_does_not_exist failed' );
 
 if ( not $IS_ONE_FIVE_PLUS ) {
-    like( $ex->output, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
-} else {
-    like( $ex, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
+  like( $ex->output, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
+}
+else {
+  like( $ex, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
 }
 done_testing;
 

@@ -3,6 +3,8 @@ abstract: 'Vivify a Git::Wrapper instance for Dist::Zilla'
 author:
   - 'Kent Fredric <kentfredric@gmail.com>'
 build_requires:
+  Log::Contextual::LogDispatchouli: 0
+  Log::Dispatchouli: 0
   Module::Build: 0.4203
   Path::Tiny: 0
   Sort::Versions: 0
@@ -20,19 +22,24 @@ name: Dist-Zilla-Util-Git-Wrapper
 provides:
   Dist::Zilla::Util::Git::Wrapper:
     file: lib/Dist/Zilla/Util/Git/Wrapper.pm
-    version: 0.002000
+    version: 0.003000
+  Dist::Zilla::UtilRole::MaybeGit:
+    file: lib/Dist/Zilla/UtilRole/MaybeGit.pm
+    version: 0.003000
 requires:
   Dist::Zilla::UtilRole::MaybeZilla: 0
   Git::Wrapper: 0
   Moose: 0
-  perl: 5.006
+  Moose::Role: 0
+  perl: 5.008
   strict: 0
+  utf8: 0
   warnings: 0
 resources:
   bugtracker: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper/issues
   homepage: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper
   repository: https://github.com/kentfredric/Dist-Zilla-Util-Git-Wrapper.git
-version: 0.002000
+version: 0.003000
 x_BuiltWith:
   modules:
     Dist::Zilla::Plugin::Authority: 1.006
@@ -80,8 +87,11 @@ x_BuiltWith:
     Dist::Zilla::PluginBundle::Author::KENTNL::Lite: 1.7.2
     Dist::Zilla::UtilRole::MaybeZilla: 0.001000
     Git::Wrapper: 0.030
+    Log::Contextual::LogDispatchouli: 0.001000
+    Log::Dispatchouli: 2.008
     Module::Build: 0.4203
     Moose: 2.1107
+    Moose::Role: 2.1107
     Path::Tiny: 0.049
     Pod::Coverage::TrustPod: 0.100003
     Sort::Versions: 1.5
@@ -93,6 +103,7 @@ x_BuiltWith:
     Test::Pod: 1.48
     Test::Pod::Coverage: 1.08
     strict: 1.08
+    utf8: 1.13
     version: 0.9904
     warnings: 1.20
   perl:
@@ -217,6 +228,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::Test::Compile::PerFile:
           file:
             - lib/Dist/Zilla/Util/Git/Wrapper.pm
+            - lib/Dist/Zilla/UtilRole/MaybeGit.pm
           path_translator: base64_filter
           prefix: t/00-compile
           skip: []

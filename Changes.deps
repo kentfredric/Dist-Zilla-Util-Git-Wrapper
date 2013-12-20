@@ -1,4 +1,16 @@
-0.002000
+0.003000
+ [Added / runtime requires]
+ - Moose::Role
+ - utf8
+
+ [Added / test requires]
+ - Log::Contextual::LogDispatchouli
+ - Log::Dispatchouli
+
+ [Changed / runtime requires]
+ - perl 5.006 → 5.008
+
+0.002000 2013-12-14T13:15:29Z
  [Added / runtime requires]
  - Dist::Zilla::UtilRole::MaybeZilla
 
