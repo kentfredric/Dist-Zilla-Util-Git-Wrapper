@@ -1,6 +1,7 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
-0.002001 2013-12-20T13:06:46Z
+0.002001 2013-12-20T13:07:37Z
+ - Add UtilRole for easier making of Plugins with a git property.
 
 0.002000 2013-12-14T13:15:29Z
  - Make tests pass on Git 1.4
