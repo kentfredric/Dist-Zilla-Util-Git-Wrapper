@@ -55,7 +55,7 @@ Vivified if not specified based on the C<zilla> parameter.
 
 =cut
 
-has git   => ( isa => 'Object', is => 'ro', lazy_build    => 1 );
+has git => ( isa => 'Object', is => 'ro', lazy_build => 1 );
 
 sub _build_git {
   my ( $self, @args ) = @_;
