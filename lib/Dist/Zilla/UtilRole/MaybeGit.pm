@@ -7,7 +7,7 @@ BEGIN {
   $Dist::Zilla::UtilRole::MaybeGit::AUTHORITY = 'cpan:KENTNL';
 }
 {
-  $Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.002001';
+  $Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.003000';
 }
 
 # ABSTRACT: A role to make adding a ->git method easy, and low-complexity
@@ -38,7 +38,7 @@ Dist::Zilla::UtilRole::MaybeGit - A role to make adding a ->git method easy, and
 
 =head1 VERSION
 
-version 0.002001
+version 0.003000
 
 =head1 AUTHOR
 
