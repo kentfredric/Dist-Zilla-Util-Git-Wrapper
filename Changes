@@ -3,6 +3,8 @@ Release history for Dist-Zilla-Util-Git-Wrapper
 {{$NEXT}}
  [00 Major]
  - Changes that may affect hand-operated downstreams
+ - Tooling Changes.
+ - Misc test and metadata fixes.
 
  [01 Tookit Change]
  - Toolkit switched from Module::Build to EUMM
