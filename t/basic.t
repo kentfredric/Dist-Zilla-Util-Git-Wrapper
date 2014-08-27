@@ -57,6 +57,7 @@ my $mex = exception {
 is( $mex, undef, 'Git::Wrapper methods executed without failure' ) or diag explain $mex;
 
 my $ex = exception {
+  local $ENV{LC_MESSAGES} = 'C';
   $wrapper->method_that_does_not_exist;
 };
 isnt( $ex, undef, 'method_that_does_not_exist failed' );

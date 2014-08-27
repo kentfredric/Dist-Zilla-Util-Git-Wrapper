@@ -3,13 +3,7 @@ use warnings;
 use utf8;
 
 package Dist::Zilla::UtilRole::MaybeGit;
-BEGIN {
-  $Dist::Zilla::UtilRole::MaybeGit::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.003000';
-}
-
+$Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.003001';
 # ABSTRACT: A role to make adding a ->git method easy, and low-complexity
 
 use Moose::Role;
@@ -38,7 +32,7 @@ Dist::Zilla::UtilRole::MaybeGit - A role to make adding a ->git method easy, and
 
 =head1 VERSION
 
-version 0.003000
+version 0.003001
 
 =head1 AUTHOR
 
@@ -46,7 +40,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

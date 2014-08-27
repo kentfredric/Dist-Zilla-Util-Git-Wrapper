@@ -2,14 +2,28 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Util::Git::Wrapper;
-BEGIN {
-  $Dist::Zilla::Util::Git::Wrapper::AUTHORITY = 'cpan:KENTNL';
-}
-{
-  $Dist::Zilla::Util::Git::Wrapper::VERSION = '0.003000';
-}
-
+$Dist::Zilla::Util::Git::Wrapper::VERSION = '0.003001';
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 use Moose;
@@ -27,6 +41,18 @@ sub AUTOLOAD {
   return if $meth eq 'DESTROY';
   return $self->git->$meth(@args);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 has git => ( isa => 'Object', is => 'ro', lazy_build => 1 );
@@ -53,7 +79,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
-version 0.003000
+version 0.003001
 
 =head1 SYNOPSIS
 
@@ -93,7 +119,7 @@ Kent Fredric <kentfredric@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2013 by Kent Fredric <kentfredric@gmail.com>.
+This software is copyright (c) 2014 by Kent Fredric <kentfredric@gmail.com>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

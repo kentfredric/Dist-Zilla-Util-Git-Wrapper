@@ -1,4 +1,8 @@
-0.003000
+This file contains ALL changes in dependencies in both REQUIRED / OPTIONAL dependencies for all phases (configure/build/runtime/test/develop)
+
+0.003001
+
+0.003000 2013-12-20T13:14:46Z
  [Added / runtime requires]
  - Moose::Role
  - utf8
