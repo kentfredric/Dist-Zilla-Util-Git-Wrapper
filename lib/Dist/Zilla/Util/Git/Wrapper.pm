@@ -5,7 +5,7 @@ use utf8;
 
 package Dist::Zilla::Util::Git::Wrapper;
 
-our $VERSION = '0.004000';
+our $VERSION = '0.004001';
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 

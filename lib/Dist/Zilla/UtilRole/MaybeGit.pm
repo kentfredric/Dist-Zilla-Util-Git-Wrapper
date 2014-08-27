@@ -5,7 +5,7 @@ use utf8;
 
 package Dist::Zilla::UtilRole::MaybeGit;
 
-our $VERSION = '0.004000';
+our $VERSION = '0.004001';
 
 # ABSTRACT: A role to make adding a ->git method easy, and low-complexity
 
