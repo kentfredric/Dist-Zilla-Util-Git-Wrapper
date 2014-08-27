@@ -8,6 +8,8 @@ our $VERSION = '0.004000';
 
 # ABSTRACT: A role to make adding a ->git method easy, and low-complexity
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 use Moose::Role;
 with 'Dist::Zilla::UtilRole::MaybeZilla';
 

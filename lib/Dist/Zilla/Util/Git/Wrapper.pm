@@ -7,6 +7,8 @@ our $VERSION = '0.004000';
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
+our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
+
 
 
 
