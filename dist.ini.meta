@@ -9,7 +9,7 @@ copyright_holder = Kent Fredric <kentfredric@gmail.com>
 
 [@Author::KENTNL]
 :version          = 2.020
-bump_versions      = 1
+bumpversions      = 1
 normal_form       = numify
 mantissa          = 6
 twitter_hash_tags = #perl #cpan
