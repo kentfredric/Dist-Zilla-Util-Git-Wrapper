@@ -3,6 +3,8 @@ use warnings;
 
 package Dist::Zilla::Util::Git::Wrapper;
 
+our $VERSION = '0.004000';
+
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 SYNOPSIS

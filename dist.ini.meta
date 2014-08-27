@@ -8,8 +8,8 @@ copyright_holder = Kent Fredric <kentfredric@gmail.com>
 ; [Bootstrap::lib]
 
 [@Author::KENTNL]
-:version          = 1.2.0
-git_versions      = 1
+:version          = 2.020
+bumpversions      = 1
 normal_form       = numify
 mantissa          = 6
 twitter_hash_tags = #perl #cpan

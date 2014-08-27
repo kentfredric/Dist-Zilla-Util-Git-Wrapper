@@ -13,7 +13,7 @@ Release history for Dist-Zilla-Util-Git-Wrapper
  - Dependencies changed since 0.003000, see misc/*.deps* for details
  - build: -1
  - configure: +1 -1 (recommends: +1)
- - develop: +7 ↑1 -6 (suggests: +2 -1)
+ - develop: +9 ↑1 -8 (suggests: +2 -1)
  - test: +2 ↓1 (recommends: +3)
 
  [Metadata]
