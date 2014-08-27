@@ -1,12 +1,20 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+ [00 Major]
+ - Changes that may affect hand-operated downstreams
+
+ [01 Tookit Change]
+ - Toolkit switched from Module::Build to EUMM
+ - Toolkit upgrade policy softened to recommendations.
+ - https://questhub.io/realm/perl/quest/5388cc12bbd0be5b2500011f
+
  [Dependencies::Stats]
  - Dependencies changed since 0.003000, see misc/*.deps* for details
- - build: ↑1
- - configure: ↑1
- - develop: +5 ↑1 -4 (suggests: +2 -1)
- - test: +2 ↑1 (recommends: +1)
+ - build: -1
+ - configure: +1 -1 (recommends: +1)
+ - develop: +6 ↑1 -6 (suggests: +2 -1)
+ - test: +2 ↓1 (recommends: +3)
 
  [Tests]
  - Migrate from ReportVersions::Tiny to Test::ReportPrereqs
