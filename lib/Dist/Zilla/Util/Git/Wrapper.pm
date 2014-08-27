@@ -2,7 +2,9 @@ use strict;
 use warnings;
 
 package Dist::Zilla::Util::Git::Wrapper;
-$Dist::Zilla::Util::Git::Wrapper::VERSION = '0.004000';
+
+our $VERSION = '0.004000';
+
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
 
