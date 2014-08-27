@@ -42,9 +42,6 @@ resources:
   repository: https://github.com/kentnl/Dist-Zilla-Util-Git-Wrapper.git
 version: '0.004000'
 x_BuiltWith:
-  failures:
-    Dist::Zilla::UtilRole::MaybeZilla: 'module was not found in INC'
-    Log::Contextual::LogDispatchouli: 'module was not found in INC'
   modules:
     CPAN::Meta: '2.142060'
     Dist::Zilla::App::Command::bakeini: '0.001002'
@@ -93,9 +90,11 @@ x_BuiltWith:
     Dist::Zilla::Plugin::Twitter: '0.025'
     Dist::Zilla::Plugin::UploadToCPAN: '5.020'
     Dist::Zilla::PluginBundle::Author::KENTNL: '2.020000'
+    Dist::Zilla::UtilRole::MaybeZilla: '0.001000'
     ExtUtils::MakeMaker: '6.98'
     File::Spec: '3.49'
     Git::Wrapper: '0.037'
+    Log::Contextual::LogDispatchouli: '0.001000'
     Log::Dispatchouli: '2.010'
     Moose: '2.1211'
     Moose::Role: '2.1211'
