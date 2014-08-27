@@ -1,6 +1,15 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+ [Dependencies::Stats]
+ - Dependencies changed since 0.003000, see misc/*.deps* for details
+ - build: ↑1
+ - configure: ↑1
+ - develop: +5 ↑2 -3
+ - test: +2 ↑1 (recommends: +1)
+
+ [Tests]
+ - Migrate from ReportVersions::Tiny to Test::ReportPrereqs
 
 0.003000 2013-12-20T13:14:46Z
  - Add UtilRole for easier making of Plugins with a git property.
