@@ -7,6 +7,8 @@ our $VERSION = '0.004000';
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
+# AUTHORITY
+
 =head1 SYNOPSIS
 
     use Dist::Zilla::Util::Git::Wrapper;
