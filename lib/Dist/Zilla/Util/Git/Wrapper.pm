@@ -1,5 +1,7 @@
+use 5.008; # utf8
 use strict;
 use warnings;
+use utf8;
 
 package Dist::Zilla::Util::Git::Wrapper;
 
@@ -30,7 +32,7 @@ our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 
 
-use Moose;
+use Moose qw( with has );
 with 'Dist::Zilla::UtilRole::MaybeZilla';
 use Git::Wrapper;
 
@@ -39,10 +41,10 @@ our $AUTOLOAD;
 ## no critic (ProhibitAutoloading)
 
 sub AUTOLOAD {
-  my ( $self, @args ) = @_;
+  my ( $self, ) = @_;
   my $meth = $AUTOLOAD;
   $meth =~ s/.+:://msx;
-  return if $meth eq 'DESTROY';
+  return if 'DESTROY' eq $meth;
   return $self->git->$meth(@args);
 }
 
