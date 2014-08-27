@@ -16,8 +16,12 @@ Release history for Dist-Zilla-Util-Git-Wrapper
  - develop: +6 ↑1 -6 (suggests: +2 -1)
  - test: +2 ↓1 (recommends: +3)
 
+ [Metadata]
+ - Olivier Mengué is now an x_contributor
+
  [Tests]
  - Migrate from ReportVersions::Tiny to Test::ReportPrereqs
+ - Fix locale specific test ( closes #1, via pull #2, thanks to Olivier Mengué )
 
 0.003000 2013-12-20T13:14:46Z
  - Add UtilRole for easier making of Plugins with a git property.
