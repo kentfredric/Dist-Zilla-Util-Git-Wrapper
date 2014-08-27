@@ -3,7 +3,7 @@ use warnings;
 use utf8;
 
 package Dist::Zilla::UtilRole::MaybeGit;
-$Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.003001';
+$Dist::Zilla::UtilRole::MaybeGit::VERSION = '0.004000';
 # ABSTRACT: A role to make adding a ->git method easy, and low-complexity
 
 use Moose::Role;
@@ -32,7 +32,7 @@ Dist::Zilla::UtilRole::MaybeGit - A role to make adding a ->git method easy, and
 
 =head1 VERSION
 
-version 0.003001
+version 0.004000
 
 =head1 AUTHOR
 
