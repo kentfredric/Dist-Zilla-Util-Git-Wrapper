@@ -18,6 +18,7 @@ Release history for Dist-Zilla-Util-Git-Wrapper
 
  [Metadata]
  - Olivier Mengué is now an x_contributor
+ - Migrated to kentnl org
 
  [Tests]
  - Migrate from ReportVersions::Tiny to Test::ReportPrereqs
