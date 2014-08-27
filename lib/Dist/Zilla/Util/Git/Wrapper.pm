@@ -1,4 +1,4 @@
-use 5.008; # utf8
+use 5.008;    # utf8
 use strict;
 use warnings;
 use utf8;
@@ -41,7 +41,7 @@ our $AUTOLOAD;
 ## no critic (ProhibitAutoloading)
 
 sub AUTOLOAD {
-  my ( $self, ) = @_;
+  my ( $self, @args ) = @_;
   my $meth = $AUTOLOAD;
   $meth =~ s/.+:://msx;
   return if 'DESTROY' eq $meth;
@@ -64,7 +64,7 @@ sub AUTOLOAD {
 has git => ( isa => 'Object', is => 'ro', lazy_build => 1 );
 
 sub _build_git {
-  my ( $self, @args ) = @_;
+  my ( $self, ) = @_;
   return Git::Wrapper->new( $self->zilla->root );
 }
 
