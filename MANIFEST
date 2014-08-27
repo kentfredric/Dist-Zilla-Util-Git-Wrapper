@@ -2,14 +2,15 @@
 .gitignore
 .perltidyrc
 .travis.yml
-Build.PL
 Changes
 LICENSE
 MANIFEST
 META.json
 META.yml
+Makefile.PL
 README
 dist.ini
+dist.ini.meta
 lib/Dist/Zilla/Util/Git/Wrapper.pm
 lib/Dist/Zilla/UtilRole/MaybeGit.pm
 maint-travis-ci/README.mkdn
