@@ -13,10 +13,12 @@ dist.ini
 dist.ini.meta
 lib/Dist/Zilla/Util/Git/Wrapper.pm
 lib/Dist/Zilla/UtilRole/MaybeGit.pm
+maint/perlcritic.rc.gen.pl
 misc/Changes.deps
 misc/Changes.deps.all
 misc/Changes.deps.dev
 misc/Changes.deps.opt
+misc/perlcritic.deps
 perlcritic.rc
 t/00-compile/lib_Dist_Zilla_UtilRole_MaybeGit_pm.t
 t/00-compile/lib_Dist_Zilla_Util_Git_Wrapper_pm.t
