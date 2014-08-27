@@ -1,3 +1,4 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
 use utf8;
@@ -10,7 +11,7 @@ our $VERSION = '0.004000';
 
 # AUTHORITY
 
-use Moose::Role;
+use Moose::Role qw( with has );
 with 'Dist::Zilla::UtilRole::MaybeZilla';
 
 has 'git' => ( is => ro =>, isa => Object =>, lazy_build => 1 );

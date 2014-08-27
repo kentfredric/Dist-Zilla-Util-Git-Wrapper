@@ -1,5 +1,7 @@
+use 5.008;    # utf8
 use strict;
 use warnings;
+use utf8;
 
 package Dist::Zilla::Util::Git::Wrapper;
 
@@ -30,7 +32,7 @@ which got so complex with dependency management my head exploded.
 
 =cut
 
-use Moose;
+use Moose qw( with has );
 with 'Dist::Zilla::UtilRole::MaybeZilla';
 use Git::Wrapper;
 
@@ -42,7 +44,7 @@ sub AUTOLOAD {
   my ( $self, @args ) = @_;
   my $meth = $AUTOLOAD;
   $meth =~ s/.+:://msx;
-  return if $meth eq 'DESTROY';
+  return if 'DESTROY' eq $meth;
   return $self->git->$meth(@args);
 }
 
@@ -62,7 +64,7 @@ Vivified if not specified based on the C<zilla> parameter.
 has git => ( isa => 'Object', is => 'ro', lazy_build => 1 );
 
 sub _build_git {
-  my ( $self, @args ) = @_;
+  my ( $self, ) = @_;
   return Git::Wrapper->new( $self->zilla->root );
 }
 
