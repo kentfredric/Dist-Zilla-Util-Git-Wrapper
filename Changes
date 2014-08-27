@@ -6,8 +6,7 @@ Release history for Dist-Zilla-Util-Git-Wrapper
  - Add UtilRole for easier making of Plugins with a git property.
 
  [Dependencies::Stats]
- - Dependencies changed since 0.002000, see Changes.deps{,.all,.dev} for
-   details
+ - Dependencies changed since 0.002000, see misc/*.deps* for details
  - runtime: +2 ↑1
  - test: +2
 
@@ -20,8 +19,7 @@ Release history for Dist-Zilla-Util-Git-Wrapper
  - add Sort::Versions for Git 1.4 tests
 
  [Dependencies::Stats]
- - Dependencies changed since 0.001002, see Changes.deps{,.all,.dev} for
-   details
+ - Dependencies changed since 0.001002, see misc/*.deps* for details
  - runtime: +1 -1
  - test: +1
 
