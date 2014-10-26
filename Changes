@@ -1,6 +1,6 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
-0.004001 2014-10-26T09:27:37Z 3e38d50
+0.004001 2014-10-26T09:36:03Z 9dbf8d8
  [Dependencies::Stats]
  - Dependencies changed since 0.004000, see misc/*.deps* for details
  - configure: (recommends: ↑1)
@@ -9,6 +9,10 @@ Release history for Dist-Zilla-Util-Git-Wrapper
 
  [Metadata]
  - Author = kentnl
+
+ [Tests]
+ - Avoid locale issues entirely by avoiding them being in regex.
+ - This should close #3 ( Thanks Slaven Rezić )
 
 0.004000 2014-08-27T14:16:46Z
  [00 Major]
