@@ -63,10 +63,10 @@ my $ex = exception {
 isnt( $ex, undef, 'method_that_does_not_exist failed' );
 
 if ( not $IS_ONE_FIVE_PLUS ) {
-  like( $ex->output, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
+  like( $ex->output, qr/method-that-does-not-exist/, 'Exception is relevant' ) or diag explain $ex;
 }
 else {
-  like( $ex, qr/ is not a git[\s-]command/, 'Exception is relevant' ) or diag explain $ex;
+  like( $ex, qr/method-that-does-not-exist.*--help/, 'Exception is relevant' ) or diag explain $ex;
 }
 done_testing;
 

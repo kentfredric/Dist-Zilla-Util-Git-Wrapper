@@ -5,7 +5,7 @@ use utf8;
 
 package Dist::Zilla::Util::Git::Wrapper;
 
-our $VERSION = '0.004000';
+our $VERSION = '0.004001';
 
 # ABSTRACT: Vivify a Git::Wrapper instance for Dist::Zilla
 
@@ -85,7 +85,7 @@ Dist::Zilla::Util::Git::Wrapper - Vivify a Git::Wrapper instance for Dist::Zilla
 
 =head1 VERSION
 
-version 0.004000
+version 0.004001
 
 =head1 SYNOPSIS
 
@@ -121,7 +121,7 @@ Vivified if not specified based on the C<zilla> parameter.
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
