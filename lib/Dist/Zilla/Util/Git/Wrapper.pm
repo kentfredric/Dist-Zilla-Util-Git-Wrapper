@@ -121,7 +121,7 @@ Vivified if not specified based on the C<zilla> parameter.
 
 =head1 AUTHOR
 
-Kent Fredric <kentfredric@gmail.com>
+Kent Fredric <kentnl@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
