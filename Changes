@@ -1,6 +1,8 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+
+0.004001 2014-10-26T09:36:03Z 9dbf8d8
  [Dependencies::Stats]
  - Dependencies changed since 0.004000, see misc/*.deps* for details
  - configure: (recommends: ↑1)
