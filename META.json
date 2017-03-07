@@ -135,11 +135,11 @@
    "provides" : {
       "Dist::Zilla::Util::Git::Wrapper" : {
          "file" : "lib/Dist/Zilla/Util/Git/Wrapper.pm",
-         "version" : "0.004002"
+         "version" : "0.004003"
       },
       "Dist::Zilla::UtilRole::MaybeGit" : {
          "file" : "lib/Dist/Zilla/UtilRole/MaybeGit.pm",
-         "version" : "0.004002"
+         "version" : "0.004003"
       }
    },
    "release_status" : "stable",
@@ -154,7 +154,7 @@
          "web" : "https://github.com/kentnl/Dist-Zilla-Util-Git-Wrapper"
       }
    },
-   "version" : "0.004002",
+   "version" : "0.004003",
    "x_BuiltWith" : {
       "external_file" : "misc/built_with.json"
    },
@@ -659,7 +659,7 @@
                   "branch" : null,
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "0.004002-source",
+                  "tag" : "0.004003-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v"
                },
@@ -753,7 +753,7 @@
                   "branch" : "releases",
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "0.004002",
+                  "tag" : "0.004003",
                   "tag_format" : "%v",
                   "tag_message" : "v%v"
                },

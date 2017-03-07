@@ -1,5 +1,7 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
+0.004003 2017-03-07T17:29:30Z 313243a
+
 0.004002 2017-03-07T17:16:31Z 3b203aa
  - Bugfix: Fix test failures with -Ddefault_inc_excludes_dot
 
