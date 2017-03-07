@@ -1,6 +1,14 @@
 Release history for Dist-Zilla-Util-Git-Wrapper
 
 {{$NEXT}}
+ - Bugfix: Fix test failures with -Ddefault_inc_excludes_dot
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.004001, see misc/*.deps* for details
+ - configure: +1 (suggests: +1)
+ - develop: +8 ↑4 -2 (recommends: ↓1, suggests: ↑2)
+ - runtime: (recommends: +1)
+ - test: +1 ↓1 (recommends: +1 ↓1)
 
 0.004001 2014-10-26T09:36:03Z 9dbf8d8
  [Dependencies::Stats]
@@ -72,4 +80,3 @@ Release history for Dist-Zilla-Util-Git-Wrapper
 
 0.001000 2013-12-06T18:44:46Z
  - First version.
-
